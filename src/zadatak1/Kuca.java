@@ -29,7 +29,7 @@ public class Kuca extends  Nekretnina {
 
     @Override
     public String toString() {
-        return super.toString() + ispis.append("\n").append("Cena: ") + izracunajCenu( zona)+vlasnik.toString();
+        return super.toString() + ispis.append("\n").append("Cena: ") + izracunajCenu( getZona())+vlasnik.toString();
     }
 
     @Override

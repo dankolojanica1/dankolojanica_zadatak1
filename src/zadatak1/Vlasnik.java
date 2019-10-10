@@ -18,9 +18,9 @@ public class Vlasnik {
             this.maticniBroj = maticniBroj;
             this.brojLicneKarte = brojLicneKarte;
             this.imeIPrezime = imeIPrezime;
-        if (!(maticniBroj.matches("[0-9]+") && maticniBroj.length() == 13)) {
-         throw new IllegalArgumentException(neispravanMaticniBroj);
-        }
+//        if (!(maticniBroj.matches("[0-9]+") && maticniBroj.length() == 13)) {
+//         throw new IllegalArgumentException(neispravanMaticniBroj);
+//        }
         if(!imeIPrezime.matches((".*\\W.*")) || imeIPrezime.length()<4 || imeIPrezime.matches(".*\\W.*")){
             throw new IllegalArgumentException(neispravnoImeIPrezime);
         }
@@ -35,7 +35,9 @@ public class Vlasnik {
     }
 
     public void setImeIPrezime(String imeIPrezime) {
-
+        if (!(maticniBroj.matches("[0-9]+") && maticniBroj.length() == 13)) {
+            throw new IllegalArgumentException(neispravanMaticniBroj);
+        }
             this.imeIPrezime = imeIPrezime;
     }
 

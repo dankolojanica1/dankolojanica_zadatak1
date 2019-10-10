@@ -51,7 +51,7 @@ public class Stan extends  Nekretnina {
 
     @Override
     public String toString() {
-        return super.toString() + ispis.append("\n").append("Cena: ").append("\n").append(izracunajCenu( zona)).append(vlasnik).toString();
+        return super.toString() + ispis.append("\n").append("Cena: ").append("\n").append(izracunajCenu( getZona())).append(vlasnik).toString();
     }
 
     @Override

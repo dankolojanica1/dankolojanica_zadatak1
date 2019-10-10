@@ -2,12 +2,13 @@ package zadatak1;
 
    abstract class Nekretnina {
     private String adresa;
-    public int zona;
+    private int zona;
     private double kvadratura;
     Vlasnik vlasnik;
-    public static final String poruka = "Uneti podaci nisu ispravni!";
-    public static final String neispravnaAdresa = "Uneti adresa nije tacna!";
-    public static final String neispravnaKvadratura = "Uneti adresa nije tacna!";
+
+    private static final String neispravnaZona = "Uneti zona mora biti u rasponu od 1 do 4 !";
+    static final String neispravnaAdresa = "Uneti adresa nije tacna!";
+    static final String neispravnaKvadratura = "Uneti kvadratura nije tacna!";
 
 
      StringBuilder ispis = new StringBuilder("");
@@ -80,7 +81,7 @@ package zadatak1;
                case 4:
                    cenaZone = 500; break;
                default:
-                   throw new IllegalStateException(poruka);
+                   throw new IllegalStateException(neispravnaZona);
            }
            return cenaZone;
 
