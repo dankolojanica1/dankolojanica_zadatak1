@@ -10,7 +10,7 @@ public class Kuca extends  Nekretnina {
     public Kuca() {
     }
 
-    public Kuca(String adresa, int zona, double kvadratura, Vlasnik vlasnik, double povrsinaOkucnice) {
+    public Kuca(String adresa, int zona, double kvadratura, Vlasnik vlasnik, double povrsinaOkucnice) throws  IllegalArgumentException {
         super(adresa,zona,kvadratura,vlasnik);
         this.povrsinaOkucnice = povrsinaOkucnice;
 

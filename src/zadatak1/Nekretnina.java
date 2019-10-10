@@ -16,7 +16,7 @@ package zadatak1;
        public Nekretnina() {
        }
 
-       public Nekretnina(String adresa, int zona, double kvadratura, Vlasnik vlasnik) {
+       public Nekretnina(String adresa, int zona, double kvadratura, Vlasnik vlasnik) throws  IllegalArgumentException{
            if(!adresa.matches("[a-zA-Z-  -1-9]+") || adresa.length()<6 || adresa.length()>60){
                throw new IllegalArgumentException(Nekretnina.neispravnaAdresa);
            }

@@ -14,7 +14,7 @@ public class Stan extends  Nekretnina {
     public Stan() {
     }
 
-    public Stan(String adresa, int zona, double kvadratura, Vlasnik vlasnik, double povrsinaPodruma, double povrsinaTerase) {
+    public Stan(String adresa, int zona, double kvadratura, Vlasnik vlasnik, double povrsinaPodruma, double povrsinaTerase) throws  IllegalArgumentException {
         super(adresa,zona,kvadratura,vlasnik);
         this.povrsinaPodruma = povrsinaPodruma;
         this.povrsinaTerase = povrsinaTerase;

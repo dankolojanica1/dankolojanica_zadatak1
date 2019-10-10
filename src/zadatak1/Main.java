@@ -31,15 +31,19 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            Vlasnik vlasnik1 = new Vlasnik("Pe78ri", "0411498525421", "004578451");
+            Vlasnik vlasnik1 = new Vlasnik("Pehri", "0411498525421", "004578451");
             Kuca kuca1 = new Kuca("Zmaj Jovina", 1, 157.00, vlasnik1, 20.00);
             System.out.println("" + kuca1.toString());
+            System.out.println();
+            System.out.println("Nekretnina 2");
+
         } catch (IllegalArgumentException iea) {
             System.out.println(iea.getMessage());
+
         }
 
         try {
-            Vlasnik vlasnik2 = new Vlasnik("Mika Mikiš", "0710198220422", "007878557");
+            Vlasnik vlasnik2 = new Vlasnik("Mika Miki", "0710198220422", "007878557");
             Stan stan1 = new Stan("Lomina", 2, 57.00, vlasnik2, 8.00, 4.00);
             System.out.println("" + stan1.toString());
         } catch (IllegalArgumentException iea) {
